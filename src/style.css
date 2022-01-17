@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /* ### Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 25px;
+    font-size: 15px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.main-info {
+    margin-top: -160px;
+    margin-bottom: 30px;
+}
+
+.main-info h1 {
+    margin-bottom: 20px;
+    color: var(--very-dark-magenta)
+}
+
+.main-info p {
+    color: var(--dark-grayish-magenta);
+}
+
+.ratings {
+    min-width: 100%;
+    margin-bottom: 30px;
+}
+
+.ratings .rate {
+    background-color: var(--light-grayish-magenta);
+    padding: 15px 50px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.ratings .rate p {
+    margin-top: 10px;
+    color: var(--very-dark-magenta);
+}
+
+.stars img {
+    padding: 0 3px;
+}
+
+.reviews {
+    /* min-width: 100%; */
+    margin-bottom: 100px;
+}
+
+.reviews .review {
+    background-color: var(--very-dark-magenta);
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--light-grayish-magenta);
+    font-weight: 400;
+}
+
+.reviews .avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reviews .name {
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+.reviews .name span {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+.reviews .review img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    body {
+        background: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg") hsl(0, 0%, 100%);
+        background-repeat: no-repeat no-repeat;
+        background-position: top left, bottom right;
+    }
+    main {
+        background: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg") hsl(0, 0%, 100%);
+        background-repeat: no-repeat no-repeat;
+        background-position: top left, bottom right;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 150px 140px;
+    }
+    .wrapper {
+        display: none;
+    }
+    .main-info {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 450px;
+        text-align: left;
+    }
+    .main-info h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+    }
+    .ratings {
+        min-width: 0;
+        width: 620px;
+        margin-bottom: 0;
+        margin-left: 70px;
+    }
+    .ratings .rate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 40px;
+    }
+    .ratings .rate:nth-child(1) {
+        margin-right: 120px;
+    }
+    .ratings .rate:nth-child(2) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .ratings .rate:nth-child(3) {
+        margin-left: 120px;
+    }
+    .ratings .stars {
+        margin-right: 30px;
+        margin-top: 6px;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .reviews .review {
+        margin-left: 0px;
+        width: 31%;
+        margin-top: 0px;
+        margin-bottom: 0;
+        /* margin-right: 40px; */
+    }
+    .reviews .review:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+    .reviews .review:nth-child(3) {
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+}
